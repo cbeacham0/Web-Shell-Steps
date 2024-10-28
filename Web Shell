@@ -1,0 +1,13 @@
+When performing a webshell
+
+You first would need to get a shell script from reverse shell generator
+Once that is done ensure you have the correct one to get a shell. The perferred one to use would be if you are doing a php would be php pentestmonkey one
+Copy the script and create a nano file that can be names "shell.php"
+
+Once done it would be good to know if there is a web directory that is listed as /uploads. You can run a gobuster command to see if one is found. If found, use it along with your ip address or url as shown http://yourlocalip_address:port#/uploads/shell.php
+
+Use this in another tab in the browser to be able to push for a shell to occur.
+
+Ensure you sent a listener it can be any high number in the 1000s such as 1234 or 4444 etc as shown "nc -lvnp 1234" and hit enter. 
+Once this is down upload the shell.php to the upload site
+Once done, you can click on the http://yourlocalip_address:port#/uploads/shell.php
